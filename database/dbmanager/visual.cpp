@@ -49,9 +49,9 @@ void Visual::printAll() {
         records.append(name);
     }
 
-    QString allRecordsText = "People in db: ";
+    QString allRecordsText = "People in db: \n";
     for (const QString& record : records) {
-        allRecordsText += "=== " + record + " , ";
+        allRecordsText += " " + record + "; \n";
     }
 
     QTextEdit *textEdit = new QTextEdit(printAllDialog);
